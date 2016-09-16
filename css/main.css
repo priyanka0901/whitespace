@@ -4,6 +4,7 @@ html , body{
 	height: 100%;
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans', sans-serif;
 }
 .container{
 	height: 100%;
@@ -47,29 +48,51 @@ html , body{
 .home{
 	width:100%;
 	height:auto;
-	background-color: #ccc;
+	background-color: #fcf7f9;
 }
 .insider{
 	width:100%;
 	height: 400px;
 }
 /*----pannel css grid --*/
-.pannel li{
-	list-style-type: none;
-	display: block;
+.heading{
+	font-size: 17px;
+	margin:20px;
+	color:#333;
 }
-.author li img{
+.author li{
+	list-style-type: none;
+	display: inline-block;
+vertical-align: middle;
+color:#666;
+font-size: 12px;
+}
+.author  img{
 	width:30px;
 	height:30px;
 	border-radius: 50%;
+	position: relative;
+	top:8px;
+	margin-right: 15px;
 }
 .book{
 	margin-top: 50px;
 	width:250px;
 }
+.book li{
+	list-style-type: none;
+	display: inline-block;
+vertical-align: middle;
+color:#666;
+font-size: 12px
+width:100px;
+}
 .book li img{
 	width:35px;
 	height: 40px;
+	position: relative;
+	top:30px;
+	margin-right: 10px;
 }
 #popular{
 	margin:0;
@@ -83,21 +106,45 @@ html , body{
 }
 .box{
 	background-color: #fff;
-	width:500px;
-	height:300px;
+	width:450px;
+	height:250px;
 	margin:20px;
+}
+.box h2{
+	font-size: 20px;
+	color:#666;
+	margin:15px 0 0 15px;
+	
+}
+.box h4{
+font-size: 15px;
+	color:#666;
+	margin:0;
+margin:10px 0 0 15px;	
+}
+.box p{
+	width:300px;
+	font-size: 14px;
+	color:#777;
+	margin:10px 0 0 15px;
 }
 .image{
 float: left;
-	width:40%;
+	width:35%;
 }
 .content{
 	float: left;
-	width:60%;
+	width:65%;
 }
 .image img{
-	height: 200px;
-	width:150px;
+	height: 180px;
+	width:120px;
+	transition: ease-in 5s;
+}
+.image img:hover{
+	position: relative;
+	top:-30px;
+	border
 }
 .content img{
 	width:50px;
@@ -109,12 +156,14 @@ float: left;
 	clear: left;
 }
 .below{
-	border-top: 1px solid black;
+	border-top: 1px solid #666;
 
 }
 .below li{
 	display: inline-block;
 	list-style-type: none;
+	color:#777;
+	font-size: 15px;
 }.below img{
 	height: 35px;
 	width:35px;
