@@ -41,10 +41,12 @@ body {
     position: relative;
     top: 8px;
 }
-.right-menubar{
-	width: auto;
-	margin-right: 20px;
+
+.right-menubar {
+    width: auto;
+    margin-right: 20px;
 }
+
 #search {
     padding: 5px;
     border-radius: 100px;
@@ -54,7 +56,7 @@ body {
 
 .title {
     margin: 0px;
-    width: 100px;
+    width: 200px;
     text-align: center;
     font-size: 18px;
     font-weight: 800;
@@ -106,11 +108,9 @@ body {
 }
 
 .slideme img {
-    margin-left: 20px;
-    height: 300px;
-    width: 200px;
+    width: 90%;
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 10%;
 }
 
 .slide-image {
@@ -128,25 +128,22 @@ body {
     color: #fff;
     font-size: 20px;
     margin-top: 40px;
-    width: 250px;
 }
 
 .slide-content h4 {
     margin: 0;
     color: #f1f1f1;
     font-size: 13px;
-    width: 200px;
 }
 
 .slide-content p {
     color: #f1f1f1;
     font-size: 15px;
-    width: 300px;
 }
 
-.slide-content button {
+.buttonit {
     background-color: #fff;
-    margin-top: 30px;
+    margin-top: 10%;
     border: none;
     border-radius: 20px;
     padding: 7px 50px;
@@ -159,29 +156,30 @@ body {
     box-shadow: 1px 1px 3px 1px grey;
 }
 
-.slide-content button:hover {
+.buttonit:hover {
     position: relative;
     bottom: 3px;
     background-color: pink;
     color: white;
     box-shadow: none;
 }
-
+.shiftkro {
+    padding: 0 20px;
+    position: relative;
+    top: -300px;
+}
 .arrowicon {
     height: 80px;
     width: 80px;
     border-radius: 50%;
-    position: relative;
-    top: -22%;
-    cursor: pointer;
 }
 
 .leftarrow {
-    left: -59.5%;
+    float: left;
 }
 
 .rightarrow {
-    left: -16.5%;
+    float: right;
 }
 
 
@@ -337,4 +335,60 @@ body {
     margin-right: 20px;
     position: relative;
     top: 10px;
+}
+
+
+/*for responsive */
+
+@media screen and (max-width: 950px) {
+    .buttonit {
+        border-radius: 10px;
+        padding: 7px 15px;
+    }
+    .slideme {
+        width: 30%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .book {
+        margin-top: 0;
+    }
+    .box {
+        margin: 25px auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slideme {
+        width: 35%;
+    }
+    .title {
+        float: right;
+        width: auto;
+    }
+    .right-menubar {
+        float: right;
+        width: auto;
+    }
+    .top-search {
+        float: left;
+    }
+    .insider {
+        width: 2000px;
+    }
+    .slideme {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .content {
+        float: right;
+        width: 65%;
+    }
+    .box {
+        width: auto;
+    }
 }

@@ -495,7 +495,7 @@ Licensed under the BSD License.
 https://github.com/yahoo/pure/blob/master/LICENSE.md
 */
 
-@media screen and (min-width:35.5em) {
+@media screen and (max-width:55.5em) {
     .pure-u-sm-1,
     .pure-u-sm-1-1,
     .pure-u-sm-1-2,
